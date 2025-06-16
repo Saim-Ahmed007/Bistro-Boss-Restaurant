@@ -105,7 +105,7 @@ export const router = createBrowserRouter([
           </AdminRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/menu/${params.id}`),
+          fetch(`https://bistro-boss-backend-xx5a.onrender.com/menu/${params.id}`),
       },
       {
         path: "users",
