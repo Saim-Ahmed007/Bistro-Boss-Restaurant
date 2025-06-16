@@ -10,7 +10,7 @@ import "@smastrom/react-rating/style.css";
 const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/review")
+    fetch("https://bistro-boss-backend-xx5a.onrender.com")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
