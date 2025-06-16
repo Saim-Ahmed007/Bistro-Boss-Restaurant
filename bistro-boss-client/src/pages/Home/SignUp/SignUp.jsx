@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
@@ -51,9 +50,7 @@ const SignUp = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Bistro | Signup</title>
-      </Helmet>
+     
       <div className="hero bg-white min-h-screen">
         <div className="hero-content flex">
           <div className="text-center w-1/2 lg:text-left">

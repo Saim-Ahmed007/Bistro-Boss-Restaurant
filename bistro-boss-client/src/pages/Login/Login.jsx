@@ -6,7 +6,6 @@ import {
 } from "react-simple-captcha";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import Swal from 'sweetalert2'
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
 
@@ -49,9 +48,7 @@ const Login = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Bistro | Login</title>
-      </Helmet>
+     
       <div className="hero bg-white min-h-screen">
         <div className="hero-content flex">
           <div className="text-center md:w-1/2 lg:text-left">

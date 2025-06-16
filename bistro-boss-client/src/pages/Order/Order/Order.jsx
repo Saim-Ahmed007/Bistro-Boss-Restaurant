@@ -6,8 +6,6 @@ import "react-tabs/style/react-tabs.css";
 import useMenu from "../../../hooks/useMenu";
 import OrderTab from "../OrderTab/OrderTab";
 import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-
 
 const Order = () => {
   const pagination = {
@@ -31,9 +29,7 @@ const Order = () => {
   return (
     
     <div>
-      <Helmet>
-        <title>Bistro | Order Food</title>
-      </Helmet>
+      
       <Cover img={orderCover} title="Order Food"></Cover>
       <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <TabList>
