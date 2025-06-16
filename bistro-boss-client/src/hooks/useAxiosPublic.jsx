@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://bistro-boss-backend-xx5a.onrender.com",
 });
 
 const useAxiosPublic = () => {
